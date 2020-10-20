@@ -1,0 +1,117 @@
+.table {
+    border: solid 1px black;
+    margin: 5px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singlePost {
+    text-transform: uppercase;
+}
+
+.post {
+    transition: all .2s linear;
+    cursor: pointer;
+
+}
+.post:hover {
+    background-color: #ccc;
+}
+
+.createPostForm {
+    margin: 10px;
+    height: 100%;
+}
+
+.paginator {
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.pageButton {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+
+.selectButton {
+    background-color: #bbb;
+    font-weight: 700;
+}
+
+.textarea {
+    padding: 5px;
+    height: 50px;
+    width: 80%;
+    resize: none;
+}
+
+.newPostTextArea {
+    width: 40%;
+}
+
+.newTitleTextArea {
+    width: 50%;
+}
+
+.addPostButton {
+    width: 5%;
+    height: 60px;
+    background-color: green;
+}
+
+.header {
+    text-align: center;
+    width: 25%;
+    font-size: 30px;
+}
+
+.item {
+    text-align: center;
+    width: 25%;
+    border-left: 1px solid black;
+    border-top: 1px solid black ;
+}
+
+.singleItem {
+    border-bottom: 1px solid black ;
+}
+
+.item:first-child {
+    border-left: none;
+}
+
+.formControl {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.button {
+    margin: 20px;
+    text-align: center;
+}
+
+.modifyButton {
+    cursor: pointer;
+    width: 20%;
+    background-color: lightgreen;
+}
+
+.removeButton {
+    cursor: pointer;
+    width: 10%;
+    height: 50px;
+}
+
+.leaveButton {
+    background-color: lightcoral;
+}
+
+.deleteButton {
+    background-color: red;
+}
