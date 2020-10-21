@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container:hover {
+    background-color: #fff;
+}
+
+.item {
+    text-align: center;
+    width: 25%;
+    border-left: 1px solid black;
+    border-top: 1px solid black ;
+}
+
+.item:first-child {
+    border-left: none
+}
+

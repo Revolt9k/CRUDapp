@@ -61,7 +61,7 @@ const tableReducer = (state = initialState, action) => {
         case DELETE_POST: {
             return {
                 ...state,
-                posts: state.posts.slice(0, action.postId - 1).concat([" "]).concat(state.posts.slice(state.currentPost , 200))
+                posts: state.posts.slice(0, action.postId - 1).concat([" "]).concat(state.posts.slice(state.currentPost, state.totalPostsCount*2))
             }
         }
         case CREATE_POST: {
@@ -74,7 +74,8 @@ const tableReducer = (state = initialState, action) => {
             return {
                 ...state,
                 posts: [...state.posts, newPost],
-                totalPostsCount: state.totalPostsCount + 1
+                totalPostsCount: state.totalPostsCount + 1,
+                editMode: false,
             }
         }
         case CHANGE_PAGE : {

@@ -1,0 +1,10 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: center;
+    width: 25%;
+    font-size: 30px;
+}

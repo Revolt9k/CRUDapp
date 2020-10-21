@@ -1,4 +1,4 @@
-import classes from "./Table.module.css";
+import classes from "./Header.module.css";
 import React from "react";
 
 const Header = () => {

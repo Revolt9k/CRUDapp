@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+}
+
+.item {
+    text-align: center;
+    width: 25%;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.textarea {
+    font-size: 25px;
+    padding: 5px;
+    height: 50px;
+    width: 80%;
+    resize: none;
+}
+
+.formControl {
+    width: 90%;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.modifyButton {
+    cursor: pointer;
+    width: 20%;
+    background-color: lightgreen;
+}

@@ -1,4 +1,4 @@
-import classes from "./Table.module.css";
+import classes from "./Paginator.module.css";
 import React from "react";
 
 

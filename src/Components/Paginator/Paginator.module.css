@@ -1,0 +1,16 @@
+.paginator {
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.pageButton {
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+
+.selectButton {
+    background-color: #97ffbe;
+    font-weight: 700;
+}

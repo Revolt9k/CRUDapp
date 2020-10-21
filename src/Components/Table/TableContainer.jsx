@@ -1,13 +1,13 @@
 import React from "react";
 import Table from "./Table";
+import {connect} from "react-redux";
 import {changePostThunkCreator,
     handleEditMode,
     getPostsThunkCreator,
     choosePost,
     deletePostThunkCreator,
     createPostThunkCreator,
-    changePage} from "../Redux/tableReducer";
-import {connect} from "react-redux";
+    changePage} from "../../Redux/tableReducer";
 
 class TableContainer extends React.Component {
 

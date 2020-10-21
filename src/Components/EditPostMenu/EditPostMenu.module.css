@@ -1,0 +1,26 @@
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonContainer {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.button {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+
+.leaveButton {
+    color: white;
+    background-color: #253d40
+}
+
+.deleteButton {
+    background-color: red;
+}
