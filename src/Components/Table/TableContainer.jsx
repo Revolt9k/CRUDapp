@@ -17,16 +17,17 @@ class TableContainer extends React.Component {
 
     render() {
         return <Table postsList={this.props.posts}
-                      changePost={this.props.changePostThunkCreator}
-                      editMode={this.props.editMode}
-                      handleEditMode={this.props.handleEditMode}
                       currentPost={this.props.currentPost}
-                      choosePost={this.props.choosePost}
-                      deletePost={this.props.deletePostThunkCreator}
-                      createPost={this.props.createPostThunkCreator}
+                      editMode={this.props.editMode}
                       totalPostsCount={this.props.totalPostsCount}
                       pageSize={this.props.pageSize}
                       currentPage={this.props.currentPage}
+
+                      handleEditMode={this.props.handleEditMode}
+                      changePost={this.props.changePostThunkCreator}
+                      choosePost={this.props.choosePost}
+                      deletePost={this.props.deletePostThunkCreator}
+                      createPost={this.props.createPostThunkCreator}
                       changePage={this.props.changePage}
 
         />
@@ -41,7 +42,6 @@ let mapStateToProps = (state) => {
         pageSize: state.tablePage.pageSize,
         totalPostsCount: state.tablePage.totalPostsCount,
         currentPage: state.tablePage.currentPage,
-
     }
 }
 

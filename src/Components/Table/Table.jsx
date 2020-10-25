@@ -7,7 +7,6 @@ import EditPostMenu from "../EditPostMenu/EditPostMenu";
 import CreatePostMenuContainer from "../CreatePostMenu/CreatePostMenuContainer";
 
 const Table = (props) => {
-
     return <div className={classes.table}>
 
         <Paginator currentPage={props.currentPage}

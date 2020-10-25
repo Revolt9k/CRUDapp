@@ -15,7 +15,7 @@ let initialState = {
             "userId": 1,
             "id": 1,
             "title": "initial state title",
-            "body": "it will never be shown"
+            "body": "it will be shown until server give response"
         },
     ],
     editMode: false,
@@ -61,7 +61,11 @@ const tableReducer = (state = initialState, action) => {
         case DELETE_POST: {
             return {
                 ...state,
-                posts: state.posts.slice(0, action.postId - 1).concat([" "]).concat(state.posts.slice(state.currentPost, state.totalPostsCount*2))
+                posts: state.posts
+                    .slice(0, action.postId - 1)
+                    .concat([" "])
+                    .concat(state.posts
+                        .slice(state.currentPost, state.totalPostsCount*2))
             }
         }
         case CREATE_POST: {
